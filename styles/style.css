@@ -258,3 +258,83 @@ hr {
 .duration span {
     font-family: 'Open Sans', sans-serif;
 }
+
+/*--------------------
+     Media quires 
+----------------------- */
+
+/* mobile/small device */
+
+@media only screen and (max-width:576px) {
+    /* utilities */
+    .container{
+        width: 95%;
+    }
+    /* headers */
+    .company-name {
+        font-size: 16px;
+    }
+    .nav-link {
+        font-size: 12px;
+        padding: 0px 5px;
+        margin: 0 0px;
+    }
+    /* main section */
+    main {
+        padding: 20px 0px;
+    }
+    /* top players and blog section */
+    .players-lists , .blogs , .courses-wrapper{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 30px;
+        width: 100%;
+        margin-top: 40px;
+    }
+    hr {
+        width: 85%;
+    }
+
+    .blog {
+        display: flex;
+        align-items: stretch;
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .blog-thumb {
+        height: auto;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* mobile/small device */
+@media only screen and (min-width:577px) and (max-width:768px){
+    /* utilities */
+    .container{
+        width: 95%;
+    }
+
+    /* top p;ayers */
+    .players-lists {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* top blogs */
+    .blog {
+        flex-direction: column;
+    }
+    .blog-thumb {
+        height: auto;
+        width: 100%;
+    }
+    .blog-details {
+        margin-left: 0;
+    }
+
+    /* courses */
+    .courses-wrapper{
+        grid-template-columns: repeat(1,1fr)
+    }
+}
