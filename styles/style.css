@@ -7,37 +7,47 @@
 /*--------------------
      Utility styles 
 ----------------------- */
-*{
+* {
     margin: 0 auto;
 }
-:root{
-    --primary-color:#562EFF;
+
+:root {
+    --primary-color: #562EFF;
     --secondary-color: #9F9F9F;
-    --light-color:#fff;
+    --light-color: #fff;
 }
 
-body{
-    font-family: 'poppins' , sans-serif;
+body {
+    font-family: 'poppins', sans-serif;
     background-color: #F3F1FF;
-    
+
 }
-.container{
+
+.container {
     max-width: 870px;
+    width: 100%;
 }
-a{
+
+a {
     text-decoration: none;
 }
-.section-wrapper{
+
+.section-wrapper {
     background-color: #fff;
     border-radius: 5px;
+    margin-top: 20px;
+}
+.top-player , .top-blogs , .lates-course{
+    padding: 30px;
 }
 /*--------------------
      Header styles 
 ----------------------- */
 
-header{
+header {
     background-color: var(--primary-color);
 }
+
 nav {
     width: 100%;
     display: flex;
@@ -45,27 +55,32 @@ nav {
     align-items: center;
     padding: 25px 0px;
 }
-.header-left{
+
+.header-left {
     margin-left: 0;
 }
+
 .logo-link {
     display: flex;
     align-items: center;
 }
-.logo{
+
+.logo {
     height: 50px;
     margin-right: 16px;
 }
-.company-name{
+
+.company-name {
     color: var(--light-color);
     font-size: 24px;
 }
 
-.nav-links ul li{
+.nav-links ul li {
     list-style: none;
     float: left;
 }
-.nav-link{
+
+.nav-link {
     font-size: 16px;
     padding: 10px 20px;
     color: var(--light-color);
@@ -78,84 +93,168 @@ nav {
     justify-content: center;
     margin-right: 0;
 }
-.user-profile-img{
+
+.user-profile-img {
     height: 51px;
     margin-left: 16px;
 }
 
-hr{
-    border: 1px solid #D1D1D1;
-    margin: 30px 0;
+
+main{
+    padding: 30px 0px;
 }
 /*--------------------
      Top Players section styles 
 ----------------------- */
-.section-wrapper{
-    padding:30px;
-}
+
+
 .section-title {
     font-weight: 500;
     font-size: 24px;
     line-height: 36px;
     color: var(--primary-color);
 }
+
 .players-lists {
     display: grid;
-    grid-template-columns: repeat(3 ,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 30px;
     width: 100%;
     margin-top: 40px;
 }
+
 .player {
     display: flex;
     align-items: center;
     margin-left: 0;
 }
+
 .player-img {
     height: 56px;
     margin-right: 16px;
     margin-left: 0;
 }
+
 .player-name {
     font-size: 18px;
     font-weight: 500;
     line-height: 27px;
     margin-left: 0;
 }
-
+hr {
+    border: 1px solid #D1D1D1;
+    margin: 30px auto;
+    max-width: 810px;
+}
 /* TOp Blogs Styles */
 .blogs {
     display: grid;
-    grid-template-columns: repeat(2 , 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 26px 45px;
     margin-top: 30px;
 }
+
 .blog {
     display: flex;
     align-items: flex-start;
     width: 100%;
 }
+
 .blog-thumb {
     height: 117px;
     margin-left: 0;
 }
+
 .blog-details {
     margin-left: 16px;
     flex-grow: 1;
 }
-.blog-title{
+
+.blog-title {
     font-size: 20px;
     line-height: 34px;
     font-weight: 500;
     color: black;
 }
-.blog-details p{
+
+.blog-details p {
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;
     color: var(--secondary-color);
     margin-top: 6px;
 }
-.blog-author{
+
+.blog-author {
     color: var(--primary-color);
+}
+
+/* ================
+    lates course   
+    ================*/
+
+.courses-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 11px;
+}
+.course {
+    padding: 12px;
+    box-shadow: 0px 5px 13px rgb(0 0 0 / 5%);
+    border-radius: 15px;
+}
+.course-tumb {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.course-title {
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 500;
+    font-family: 'roboto', sans-serif;
+    color: rgba(30, 30, 30, 1);
+}
+
+.instructor {
+    font-family: 'roboto', sans-serif;
+    font-size: 15px;
+    line-height: 18px;
+    color: rgba(297, 107, 79, 1);
+    margin-top: 7px;
+}
+
+.course-info {
+    margin-top: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rating {
+    font-size: 14px;
+    margin-left: 0;
+    color: var(--secondary-color);
+}
+
+.fa-star {
+    color: rgba(255, 192, 20, 1);
+}
+
+.disabled {
+    color: var(--secondary-color);
+}
+
+.duration {
+    margin-right: 0;
+    background-color: #FFE4E8;
+    color: #FF4A60;
+    padding: 4px 7px;
+    border-radius: 50px;
+    font-size: 14px;
+}
+
+.duration span {
+    font-family: 'Open Sans', sans-serif;
 }
