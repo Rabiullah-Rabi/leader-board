@@ -1,0 +1,81 @@
+/*--------------------
+     imported fonts 
+----------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins:wght@400;500&family=Roboto:wght@500&display=swap');
+
+
+/*--------------------
+     Utility styles 
+----------------------- */
+*{
+    margin: 0 auto;
+}
+:root{
+    --primary-color:#562EFF;
+    --secondary-color: #9F9F9F;
+    --light-color:#fff;
+}
+
+body{
+    font-family: 'poppins' , sans-serif;
+    background-color: #F3F1FF;
+    
+}
+.container{
+    max-width: 870px;
+}
+a{
+    text-decoration: none;
+}
+
+/*--------------------
+     Header styles 
+----------------------- */
+
+header{
+    background-color: var(--primary-color);
+}
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0px;
+}
+.header-left{
+    margin-left: 0;
+}
+.logo-link {
+    display: flex;
+    align-items: center;
+}
+.logo{
+    height: 50px;
+    margin-right: 16px;
+}
+.company-name{
+    color: var(--light-color);
+    font-size: 24px;
+}
+
+.nav-links ul li{
+    list-style: none;
+    float: left;
+}
+.nav-link{
+    font-size: 16px;
+    padding: 10px 20px;
+    color: var(--light-color);
+    margin: 0 8px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0;
+}
+.user-profile-img{
+    height: 51px;
+    margin-left: 16px;
+}
